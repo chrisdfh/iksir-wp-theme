@@ -6,7 +6,7 @@
 
         wp_register_style('fontawesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css',array(), 1,'all');
         wp_enqueue_style('fontawesome');
-
+        
         wp_register_style('my_style',get_template_directory_uri().'/style.css',array(), 2.3,'all');
         wp_enqueue_style('my_style');
     }

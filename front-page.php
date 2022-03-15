@@ -83,7 +83,7 @@ $bg_dark=get_template_directory_uri()."/assets/car-bg2.jpg";
                             ?>
                             <div class="car-vistas">
                                 <?= $views ?> Vistas
-                                <?=(!empty(get_post_custom()['valor'][0]) ? ' ('.get_post_custom()['valor'][0].' Estrellas)':' (Sin Valoración)' )?>  
+                                <?=(!empty(get_post_custom()['valor'][0]) ? ' ('.get_post_custom()['valor'][0].' Estrellas)':' (Sin Valoraci&oacute;n)' )?>  
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@ $bg_dark=get_template_directory_uri()."/assets/car-bg2.jpg";
                                         <i class="fa-solid fa-stopwatch"></i>
                                     </div>
                                     <div class="dato">
-                                        Tiempo de cocción
+                                        Tiempo de cocci&oacute;n
                                     </div>
                                     <div class="valor">
                                         <?=get_post_custom()['Tiempo_de_coccion'][0]?>
@@ -121,7 +121,7 @@ $bg_dark=get_template_directory_uri()."/assets/car-bg2.jpg";
                                         <i class="fa-solid fa-heart-pulse"></i>
                                     </div>
                                     <div class="dato">
-                                        Calorías
+                                        Calor&iacute;as
                                     </div>
                                     <div class="valor">
                                         <?=get_post_custom()['Caloria'][0]?>
@@ -162,14 +162,19 @@ endif;
 
 <div class="alto-pantalla bloque-bienvenida b-bien">
     <div class="titulo-bloque text-center">
-        BIENVENIDOS
+        Ofrecemos
     </div>
     <div class="pt-5">
         <div class="container">
             <div class="row m-0">
                 <div class="col-12 col-md-8 offset-md-2">
-                    <div class="texto-bienvenida text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis provident, eius assumenda nam aliquid deleniti iste libero sequi tempora cum quidem blanditiis est obcaecati sit, numquam illum impedit maxime. Inventore asperiores ipsum tempora totam! Ipsam, dicta provident facere voluptates iure enim asperiores placeat labore reprehenderit reiciendis ullam a molestias similique quas expedita quam molestiae sapiente minima! Mollitia quis assumenda nulla soluta libero quas nihil animi iusto nemo voluptatibus, labore perspiciatis modi! Voluptatum, in molestiae sequi, explicabo nihil deleniti illum repudiandae optio cumque, nesciunt consequatur voluptates nam. Aliquam doloremque voluptatem delectus, impedit perspiciatis voluptatum. Molestiae excepturi labore dolor voluptatem reprehenderit perspiciatis?
+                    <div class="texto-bienvenida">
+                        <ul>
+                            <li>Alimentos duraderos de versatil aplicaciones culinarias</li>
+                            <li>Alimentos funcionales de calidad e inocuos</li>
+                            <li>Alimentos de consumo instant&aacute;neo y/o para cocci&oacute;n</li>
+                            <li>Alimentos que satisfacen las necesidades nutricionales de consumidores con requerimientos especiales de alimentaci&oacute;n, libres de gluten, altos en prote&iacute;na, diur&eacute;ticos, altos en fibra y/o energ&eacute;ticos</li>
+                        </ul>
                     </div>
 
                 <div class="lista-categories pt-5">
@@ -335,7 +340,7 @@ if ( $arr_semana->have_posts() ) :
                                                     <i class="fa-solid fa-stopwatch"></i>
                                                 </div>
                                                 <div class="dato">
-                                                    Tiempo de cocción
+                                                    Tiempo de cocci&oacute;n
                                                 </div>
                                                 <div class="valor">
                                                     <?=get_post_custom()['Tiempo_de_coccion'][0]?>
@@ -361,7 +366,7 @@ if ( $arr_semana->have_posts() ) :
                                                     <i class="fa-solid fa-heart-pulse"></i>
                                                 </div>
                                                 <div class="dato">
-                                                    Calorías
+                                                    Calor&iacute;as
                                                 </div>
                                                 <div class="valor">
                                                     <?=get_post_custom()['Caloria'][0]?>
@@ -407,7 +412,7 @@ if ( $arr_blog->have_posts() ) :
         <div class="row m-0 pb-5">
             <div class="col-md-6 offset-md-3">
                 <div class="intro-blog">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis minima dolor vel! Doloribus error, alias sint, expedita blanditiis mollitia cupiditate officiis sapiente, sunt porro a ipsam maiores sed consectetur.
+                    A continuaci&oacute;n est&aacute;n las &uacute;ltimas entradas a nuestro BLOG, para verlas todas haz click <strong><a href="<?= home_url( ) ?>/category/blog/">Aqu&iacute;</a></strong>.
                 </div>
             </div>
         </div>
@@ -437,7 +442,7 @@ if ( $arr_blog->have_posts() ) :
                             <?php the_excerpt(  )?>
                         </div>
                         <div class="boton pt-4">
-                            <a href="<?php the_permalink() ?>" class="btn btn-primary btn-tema text-white"> Leer más&hellip;</a>
+                            <a href="<?php the_permalink() ?>" class="btn btn-primary btn-tema text-white"> Leer m&aacute;s&hellip;</a>
                         </div>
                     </div>
                 </div>
