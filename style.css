@@ -6,6 +6,9 @@ Author URI: https://wa.me/+584122841442
 Description: Tema Personalizado para Iksir Extractos Esenciales. Feb-Mar 2022
 Tags: Blog Receta
 */
+html{
+    margin:0 !important;
+}
 body {
     background-color: white;
     margin: 0;
@@ -502,8 +505,6 @@ body.archive .fecha{
     color:#777;
     font-size: 12px;
     margin-right:15px;
-}
-body.archive .vistas{
 }
 
 body.archive .titulo-post a{

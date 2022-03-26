@@ -1,6 +1,5 @@
 <?php
 get_header();
-show_admin_bar(false);
 ?>
 
 <div class="container-fluid g-0">
@@ -43,8 +42,8 @@ $args = array(
 $arr_blog = new WP_Query( $args ); //BÚSQUEDA EN BD DE LAS NOTAS CON LAS CARACTERÍSTICAS
 
 
-if ( $arr_posts->have_posts() ) :
 $counter=0;
+if ( $arr_posts->have_posts() ) :
 $bg_light=get_template_directory_uri()."/assets/car-bg1.jpg";
 $bg_dark=get_template_directory_uri()."/assets/car-bg2.jpg";
 

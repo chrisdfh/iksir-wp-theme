@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&family=Raleway&display=swap&display=swap" rel="stylesheet">
     <?php
         wp_head();
@@ -13,16 +14,15 @@
     <!-- <title>Iksir <?php wp_title()?></title> -->
 </head>
 <body <?php body_class(); ?>>
-
-<style>
-
-    html{
-        margin:0 !important;
+<?php 
+    if (has_custom_logo()){
+        $custom_logo_id = get_theme_mod( 'custom_logo' );
+        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+        $logo = $image[0];
+    } else {
+        $logo = get_home_url()."/wp-content/themes/iksir-wp/assets/iksir.png";
     }
-
-</style>
-
-
+?>
 <header class="">
     <div class="container ps-0 pe-0">
         <div class="navbar navbar-expand-md  fixed-md-top pt-0 pb-0 ps-md-3 pe-md-3">
@@ -33,7 +33,7 @@
                 </span>
             </button>
             <a class="navbar-brand" href="<?= get_home_url();?>">
-                <img src="<?= get_home_url()."/wp-content/themes/iksir-wp/assets/iksir.png" ?>" alt="">
+                <img src="<?= $logo ?>" alt="">
             </a>
                 <?php
                 wp_nav_menu( array(
@@ -49,18 +49,7 @@
                 ?>
                 
             </div>
-    </div>
-
-
-        <?php 
-        get_home_url( )
-        //wp_nav_menu(
-            // array(
-            //     'theme_location'=> 'top-menu',
-            //     'menu_class'=>'nav'
-            //     )
-        //)
-        ?>
+        </div>
     </div>
 </header>
  

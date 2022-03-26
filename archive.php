@@ -1,11 +1,10 @@
 <?php
 get_header();
-show_admin_bar(false);
 ?>
 
 <div class="container resultados">
 
-    <div class="iksir-archive-title titulo-bloque ps-4 pt-4 pb-5">
+    <div class="iksir-archive-title titulo-bloque ps-4 pt-4 pb-5 text-capitalize">
         <?= single_cat_title(  )?>
     </div>
     <div class="row">

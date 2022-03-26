@@ -1,5 +1,6 @@
 <?php
 get_header();
+show_admin_bar(false);
 
 $args = array(
     'post_type' => 'post',
